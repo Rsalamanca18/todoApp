@@ -6,3 +6,6 @@
 - The app will have a digital clock.
 - The chrome extension Momentum will be major inspiration for this project.
 - This project will be linked to the portfolio
+
+# Added
+- Local Storage for user name
