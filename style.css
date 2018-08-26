@@ -12,6 +12,15 @@ body{
   align-items: center;
 }
 
+#todo{
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 10px 10px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
 #boop{
   display: flex;
   justify-content: center;
@@ -19,21 +28,34 @@ body{
 }
 
 #list-border{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-}
-
-#list-border{
-  list-style: none;
+  font-size: 20px;
   border: 2px solid grey;
-  border-radius: 10px;
-  background-color: #f3f3f3;
+  border-radius: 5px;
+  background: #f3f3f3;
   width: 400px;
+  margin: auto;
 }
 
-#placeholder{
-  list-style-type: none;
+#list-border h1{
+  margin: 0;
+  padding: 10px 20px;
+}
+
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  /* background: #fff; */
+  height: 50px;
+  line-height: 50px;
+  color: #666;
+}
+
+li:nth-child(2n){
+	background: #a9a9a9;
+  color: #fff;
 }

@@ -1,3 +1,4 @@
+//items stored in this array
 var itemArray = []
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -10,31 +11,38 @@ document.addEventListener('DOMContentLoaded', function(){
       itemArray.push(newListItem.value)
     }
 
+
     renderListItems()
   })
 })
 
+//function for rendering list items
 function renderListItems(){
 
   var newListItem = document.querySelector('#todo')
+  //resets input after submission
   newListItem.value = ''
+
 
   var lis = document.querySelectorAll('ul li')
 
+  //removes previous entries to avoid duplicates
   lis.forEach(function (li){
     li.remove()
   })
 
-  itemArray.forEach(function(color){
+  //grabs and prepends items. renders to DOM
+  itemArray.forEach(function(item){
     var ul = document.querySelector('#listOfItems')
     var li = document.createElement('li')
 
-    li.textContent = color
+
+
+    li.textContent = item
     ul.prepend(li)
-    console.log(itemArray)
+
+    console.clear()
+    console.log("List of things to do: " + itemArray + "")
+
   })
 }
-
-// function saveListItem (item) {
-//   localStorage.setItem('task', item)
-// }
