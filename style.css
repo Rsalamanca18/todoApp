@@ -2,6 +2,7 @@ body{
   /* background: url(img/pexels-photo.jpg); */
   height: 100vh;
   background-position: center;
+  background-color: #43C6AC;
 }
 
 .welcome-form{
@@ -33,6 +34,6 @@ body{
   width: 400px;
 }
 
-input[type=text]{
-  width: 100%;
+#placeholder{
+  list-style-type: none;
 }

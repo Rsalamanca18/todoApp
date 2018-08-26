@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function setName(name) {
   localStorage.setItem('obj', name)
+  document.getElementById('name').value = ''
 }
 
 function renderName() {
