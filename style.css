@@ -1,5 +1,5 @@
 body{
-  /* background: url(img/pexels-photo.jpg); */
+  background: url(img/pexels-photo.jpg);
   height: 100vh;
   background-position: center;
   background-color: #43C6AC;
@@ -12,13 +12,16 @@ body{
   align-items: center;
 }
 
+.welcomeName{
+  color: white;
+}
+
 #todo{
   font-size: 18px;
   width: 100%;
   padding: 10px 10px 10px 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 #boop{
@@ -39,8 +42,17 @@ body{
 #list-border h1{
   margin: 0;
   padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 }
 
+
+#btnClear{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0; 
+}
 
 ul{
   list-style: none;
@@ -49,10 +61,11 @@ ul{
 }
 
 li{
-  /* background: #fff; */
+  background: #fff;
   height: 50px;
   line-height: 50px;
   color: #666;
+  padding-left: 15px;
 }
 
 li:nth-child(2n){

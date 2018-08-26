@@ -10,10 +10,10 @@
 </head>
 <body>
   <div class="container welcome-form form-group">
-    <h1>Welcome, <span id="userName"></span></h1>
+    <h1 class="welcomeName">Welcome, <span id="userName"></span></h1>
     <form class="" action="" id="userForm">
       <div class="form-group">
-        <label for="name">Enter a username</label>
+        <label class="welcomeName" for="name">Enter a username</label>
         <input type="text" placeholder=" user name" required id="name">
       </div>
       <div id="boop">
@@ -34,6 +34,9 @@
       <li class="" id="placeholder">Add to list</li>
     <!-- list item will be rendered here -->
     </ul>
+    <div id="btnClear">
+      <button class="btn btn-danger justify-content-center" id="btnClear">Clear All Tasks</button>
+    </div>
   </div>
 
 

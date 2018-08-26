@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     renderListItems()
+    clearAll()
   })
 })
 
@@ -36,13 +37,23 @@ function renderListItems(){
     var ul = document.querySelector('#listOfItems')
     var li = document.createElement('li')
 
-
-
     li.textContent = item
     ul.prepend(li)
 
+    //clears console
     console.clear()
+    //shows list items onto console
     console.log("List of things to do: " + itemArray + "")
 
+  })
+}
+
+//handy to clear all list items at once
+function clearAll(){
+  var btnClear = document.querySelector('#btnClear')
+  btnClear.addEventListener('click', function(){
+    var ul = document.querySelector('#listOfItems')
+    ul.innerHTML = '';
+    itemArray = [];
   })
 }
