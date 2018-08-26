@@ -1,6 +1,20 @@
 body{
-  background: url(img/pexels-photo.jpg);
+  /* background: url(img/pexels-photo.jpg); */
+  height: 100vh;
   background-position: center;
+}
+
+.welcome-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#boop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #list-border{

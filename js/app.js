@@ -1,30 +1,39 @@
 // document.addEventListener('DOMContentLoaded', function(){
-//   console.log('Loaded')
-//   list()
+//
 // })
 
 function doSomething(){
   var addButton = document.querySelector('#addButton')
   addButton.addEventListener('click', function(event){
 
-    console.log('added')
+    console.log(itemArray)
   })
 }
  doSomething()
 
-// function list(){
-//   let todo = document.getElementbyId('todo').value
-//   //Grabs value from input and creates text node
-//   let newItem = document.createTextNode(todo)
-//   //creates a new li element
-//   let listTodo = document.createElement('li')
-//   listTodo.appendChild(newItem)
-//   document.getElementbyId('listOfItems').appendChild(newItem)
-//   console.log("hello")
-// }
+
+//input value will be pushed into this array
+var itemArray = []
+
+function addToList(){
+  //grabs value from input
+  var task = document.querySelector('#todo').value
+  //grabs the unordered list
+  var ul = document.querySelector('#listOfItems')
+  //creates a new list item
+  var li = document.createElement('li')
+  //if value is not null, push the value into the array
+  if (task != null){
+    // li.textContent = task
+    itemArray.push(task).value
+    console.log(itemArray)
+  }
+
+
+}
 
 // function saveListItem (item) {
-//   localStorage.setItem('obj', item)
+//   localStorage.setItem('task', item)
 // }
 //
 // function renderListItem() {

@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container welcome-form form-group">
     <h1>Welcome, <span id="userName"></span></h1>
     <form action="" id="userForm">
       <div class="form-group">
         <label for="name">Enter a username</label>
         <input type="text" placeholder="user name" required id="name">
       </div>
-      <div>
+      <div id="boop">
         <button type="submit" class="btn btn-success">Boop</button>
       </div>
     </form>
@@ -24,8 +24,10 @@
 
   <div class="container justify-content-center" id="list-border">
     <h1>To-Do List</h1>
-    <input type="text" name="task" id="todo" placeholder="ex. finish projects">
-    <button type="submit" id="addButton">Add New Todo</button>
+    <form action="">
+      <input type="text" name="task" id="todo" placeholder=" ex. finish projects">
+      <button type="submit" id="addButton">Add New Todo</button>
+    </form>
     <ul id="listOfItems">
     <!-- list item will be rendered here -->
     </ul>
