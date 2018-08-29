@@ -4,6 +4,11 @@ body{
   height: 100vh;
   background-position: center;
   background-color: #43C6AC;
+  margin-top: 80px;
+}
+
+hr{
+
 }
 
 .welcome-form{
@@ -15,6 +20,17 @@ body{
 
 .welcomeName{
   color: white;
+}
+
+.trash{
+  height: 50px;
+  margin-right: 20px;
+  text-align: center;
+  color: red;
+  width: 0;
+  transition: 0.2s linear;
+  opacity: 0;
+  display: inline-block;
 }
 
 .complete{
@@ -93,12 +109,25 @@ li{
   height: 50px;
   line-height: 50px;
   color: #000;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   border-bottom: 1px solid black;
   font-family: sans-serif;
+}
+
+li:hover span{
+  width: 50px;
+  opacity: 1.0;
 }
 
 li:nth-child(2n){
 	background: #a9a9a9;
   color: #fff;
+}
+
+@media screen and (max-width: 600px){
+  body{
+    background: url(img/paper.jpeg)
+    background-position: center;
+    /* height: 100vh; */
+  }
 }
