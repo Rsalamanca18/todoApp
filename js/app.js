@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', function(){
       itemArray.push(newListItem.value)
     }
 
-
     renderListItems()
     clearAll()
+    checked()
   })
 })
 
@@ -37,23 +37,32 @@ function renderListItems(){
     var ul = document.querySelector('#listOfItems')
     var li = document.createElement('li')
 
+
+
     li.textContent = item
     ul.prepend(li)
 
     //clears console
     console.clear()
     //shows list items onto console
-    console.log("List of things to do: " + itemArray + "")
+    console.log("List of things to do: " + itemArray)
 
+  })
+
+  //trying to add spans in the 'li's
+  li.forEach(function(){
+    var span = document.createElement('span')
+    // span.innerHTML('<i class="fas fa-trash"></i>')
+    li.innerHTML = '<span><i class="fas fa-trash"></i></span>'
   })
 }
 
-//handy to clear all list items at once
-function clearAll(){
-  var btnClear = document.querySelector('#btnClear')
-  btnClear.addEventListener('click', function(){
-    var ul = document.querySelector('#listOfItems')
-    ul.innerHTML = '';
-    itemArray = [];
+
+
+function checked (){
+  var listItem = document.querySelector('li')
+  listItem.addEventListener('click', function(){
+    listItem.className = 'complete'
+    console.log('clicked')
   })
 }

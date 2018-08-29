@@ -1,3 +1,4 @@
+
 body{
   background: url(img/pexels-photo.jpg);
   height: 100vh;
@@ -15,6 +16,15 @@ body{
 .welcomeName{
   color: white;
 }
+
+.complete{
+  text-decoration: line-through;
+  font-style: oblique;
+}
+
+/* #start{
+  font-style: italic;
+} */
 
 #todo{
   font-size: 18px;
@@ -35,7 +45,7 @@ body{
   border: 2px solid grey;
   border-radius: 5px;
   background: #f3f3f3;
-  width: 400px;
+  width: 380px;
   margin: auto;
 }
 
@@ -51,7 +61,25 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 10px 0; 
+  margin: 10px 0;
+}
+
+#btnDelete{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#btnCancel{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#confirm{
+  margin-top: 15px;
 }
 
 ul{
@@ -64,8 +92,10 @@ li{
   background: #fff;
   height: 50px;
   line-height: 50px;
-  color: #666;
+  color: #000;
   padding-left: 15px;
+  border-bottom: 1px solid black;
+  font-family: sans-serif;
 }
 
 li:nth-child(2n){

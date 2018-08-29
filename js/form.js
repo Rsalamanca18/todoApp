@@ -24,3 +24,8 @@ function renderName() {
     console.log('No Name entered')
   }
 }
+
+// hideInput(){
+//   var div1 = document.getElementById('inputDiv')
+//   div1.className = 'd-none'
+// }
