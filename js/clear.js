@@ -66,3 +66,29 @@ function reset(){
   var btnCancel = document.querySelector('#btnCancel')
   btnCancel.className = 'd-none'
 }
+
+//deletes single item but not from array
+function taskDone(){
+  //grabs trash can span
+  var items = document.querySelectorAll('#listOfItems span')
+  //loops through all of them
+  for (var i = 0; i < items.length; i++){
+    //checks which span was clicked
+    items[i].onclick = function(){
+      //set variable for the clicked span
+      //removes it form DOM
+      // var liIndex = itemArray.indexOf(this.innerHTML)
+      var change = this.parentNode
+      change.className = 'complete'
+    }
+  }
+
+  for (item in itemArray){
+    console.log(itemArray[item])
+    itemArray[item].onclick = function(){
+
+    }
+
+  }
+
+}

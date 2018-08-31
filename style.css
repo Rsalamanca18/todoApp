@@ -7,10 +7,6 @@ body{
   margin-top: 80px;
 }
 
-hr{
-
-}
-
 .welcome-form{
   display: flex;
   flex-direction: column;
@@ -18,19 +14,37 @@ hr{
   align-items: center;
 }
 
-.welcomeName{
+.welcomeName,#userName{
   color: white;
 }
 
-.trash{
+span#userName{
+  padding-left:10px;
+}
+
+.welcomeName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
+}
+
+.check{
   height: 50px;
   margin-right: 20px;
   text-align: center;
-  color: red;
+  color: white;
   width: 0;
   transition: 0.2s linear;
   opacity: 0;
   display: inline-block;
+}
+
+span.check{
+  background: green;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .complete{
@@ -98,6 +112,10 @@ hr{
   margin-top: 15px;
 }
 
+h1{
+  font-family: 'Bangers', cursive;
+}
+
 ul{
   list-style: none;
   margin: 0;
@@ -114,6 +132,11 @@ li{
   font-family: sans-serif;
 }
 
+li{
+  overflow-x: hidden
+  width: 350px;
+}
+
 li:hover span{
   width: 50px;
   opacity: 1.0;
@@ -126,8 +149,13 @@ li:nth-child(2n){
 
 @media screen and (max-width: 600px){
   body{
-    background: url(img/paper.jpeg)
-    background-position: center;
+    background: url(img/paper.jpeg) */
+    /* background-position: center; */
     /* height: 100vh; */
+   }
+
+  #list-border{
+    width: 100%;
   }
+
 }

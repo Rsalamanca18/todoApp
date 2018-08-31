@@ -14,22 +14,9 @@ document.addEventListener('DOMContentLoaded', function(){
       itemArray.push(newListItem.value)
     }
 
-    // var todoText = document.querySelector('#todo').value
-  	// if (todoText != null && todoText != ''){
-    // 	var ul = document.querySelector('ul')
-    // 	var li = document.createElement('li')
-    //
-    // 	li.innerHTML = '<span><i class="fa fa-trash-alt"></i></span>' + todoText
-    // 	ul.prepend(li)
-    //
-    //   todoText = ''
-    //   console.clear()
-    //
-	  // }
-
     renderListItems()
     clearAll()
-    // checked()
+    taskDone()
   })
 })
 
@@ -58,9 +45,19 @@ function renderListItems(){
 
     //item is the item in array
     //adds to li element and to beginning of list
-    li.innerHTML = '<span class="trash"><i class="fa fa-trash-alt"></i></span>' + item
+    li.innerHTML = '<span class="check"><i class="fa fa-check"></i></span>' + item
     // li.textContent = item
     ul.prepend(li)
+
+    // var items = document.querySelectorAll('#listOfItems span')
+    // for (var i = 0; i < items.length; i++){
+    //   items[i].onclick = function(){
+    //     // liIndex = itemArray.indexOf(this.innerHTML)
+    //     var removeLi = this.parentNode
+    //     removeLi.remove()
+    //     console.log(this.parentNode)
+    //   }
+    // }
 
     //clears console
     console.clear()
@@ -69,13 +66,3 @@ function renderListItems(){
 
   })
 }
-
-
-
-// function checked (){
-//   var listItem = document.querySelectorAll('li')
-//   listItem.addEventListener('click', function(){
-//     // .className = 'complete'
-//     console.log('clicked')
-//   })
-// }

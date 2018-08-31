@@ -7,12 +7,12 @@
   <title>Todo App</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container welcome-form form-group">
-    <h1 class="welcomeName">Welcome, <span id="userName"></span></h1>
+    <h1 class="welcomeName">WELCOME, <span id="userName"></span></h1>
     <form class="" action="" id="userForm">
       <div class="form-group">
         <label class="welcomeName" for="name">Enter a username</label>
@@ -23,19 +23,20 @@
       </div>
     </form>
   </div>
-  <hr>
 
 
   <div class="container justify-content-center" id="list-border">
-    <h1>To-Do List</h1>
+    <h1>TO-DO LIST</h1>
     <form action="" class="d-flex justify-content-center" id="listForm">
-      <input type="text" name="task" id="todo" placeholder=" ex. finish projects">
+      <input type="text" name="task" id="todo" placeholder=" ex. finish projects" maxlength="33">
       <!-- button will add to list -->
       <button class="btn btn-success " type="submit" id="addButton"><i class="fas fa-plus-circle fa-lg"></i></button>
     </form>
     <ul id="listOfItems">
       <li class="d-none" id="placeholder"><span id="start">...add to list...</span></li>
+
     <!-- list item will be rendered here -->
+
     </ul>
     <!-- this visible button will ask to confirm delete-all -->
     <div>

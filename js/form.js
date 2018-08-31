@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     event.preventDefault()
 
     let input = document.getElementById('name')
-      setName(input.value)
+      setName(input.value.toUpperCase())
       renderName()
   })
 })
@@ -21,6 +21,7 @@ function renderName() {
     let welcome = document.getElementById('userName')
     welcome.innerHTML = inputName
   } else {
+
     console.log('No Name entered')
   }
 }
