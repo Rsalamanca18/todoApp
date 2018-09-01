@@ -7,6 +7,6 @@
 - Local Storage for user name
 - Cross off tasks 
 
-#Bugs (currently working to fix)
+# Bugs (currently working to fix)
 - Can cross off tasks but cannot delete single tasks.
 - If item(s) are crossed off, will become active after new item is added to list.
