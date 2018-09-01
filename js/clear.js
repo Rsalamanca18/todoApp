@@ -76,19 +76,8 @@ function taskDone(){
     //checks which span was clicked
     items[i].onclick = function(){
       //set variable for the clicked span
-      //removes it form DOM
-      // var liIndex = itemArray.indexOf(this.innerHTML)
       var change = this.parentNode
-      change.className = 'complete'
+      change.classList.toggle('complete')
     }
   }
-
-  for (item in itemArray){
-    console.log(itemArray[item])
-    itemArray[item].onclick = function(){
-
-    }
-
-  }
-
 }

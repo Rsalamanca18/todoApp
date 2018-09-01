@@ -42,9 +42,14 @@ span#userName{
 }
 
 span.check{
-  background: green;
-  border: 1px solid black;
-  border-radius: 5px;
+  background: #28a745;
+  border: 2px solid #28a745;
+  /* border-radius: 5px; */
+}
+
+.notComplete{
+  text-decoration: none;
+  font-style: normal;
 }
 
 .complete{
@@ -127,8 +132,7 @@ li{
   height: 50px;
   line-height: 50px;
   color: #000;
-  /* padding-left: 15px; */
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   font-family: sans-serif;
 }
 

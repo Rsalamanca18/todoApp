@@ -42,22 +42,13 @@ function renderListItems(){
   itemArray.forEach(function(item){
     var ul = document.querySelector('#listOfItems')
     var li = document.createElement('li')
+    li.className = 'taskItem'
 
     //item is the item in array
     //adds to li element and to beginning of list
     li.innerHTML = '<span class="check"><i class="fa fa-check"></i></span>' + item
     // li.textContent = item
     ul.prepend(li)
-
-    // var items = document.querySelectorAll('#listOfItems span')
-    // for (var i = 0; i < items.length; i++){
-    //   items[i].onclick = function(){
-    //     // liIndex = itemArray.indexOf(this.innerHTML)
-    //     var removeLi = this.parentNode
-    //     removeLi.remove()
-    //     console.log(this.parentNode)
-    //   }
-    // }
 
     //clears console
     console.clear()
